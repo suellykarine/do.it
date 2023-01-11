@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import SignUpImage from "../../assests/signup.svg";
+import SignUpImage from "../../assests/login.svg";
 
 export const Container = styled.div `
   height: 100vh;
@@ -25,10 +25,10 @@ export const Content = styled.div `
   max-width: 700px;
 `;
 
-const appearFromRight = keyframes `
+const appearFromLeft = keyframes `
   from {
     opacity: 0;
-    transform: translateX(50px)
+    transform: translateX(-50px)
   }
   to {
     opacity: 1;
@@ -41,7 +41,7 @@ export const AnimationContainer = styled.div `
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: ${appearFromRight} 1s;
+  animation: ${appearFromLeft} 1s;
   form {
     margin: 80px 0;
     width: 340px;
