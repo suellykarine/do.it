@@ -38,7 +38,7 @@ const Login = () => {
             <Input
               icon={FiMail}
               label="Email"
-              placeholder="Seu melhor email"
+              placeholder="Seu email"
               register={register}
               name="email"
               error={errors.email?.message}
@@ -46,7 +46,7 @@ const Login = () => {
             <Input
               icon={FiLock}
               label="Senha"
-              placeholder="Sua melhor senha"
+              placeholder="Sua senha"
               type="password"
               register={register}
               name="password"
